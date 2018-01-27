@@ -1,0 +1,11 @@
+package: com.isinolsun.app
+
+activity: com.isinolsun.app.activities.UserTypeChooserActivity
+
+device id: emulator-5554
+
+
+
+
+
+
