@@ -1,7 +1,5 @@
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,7 +10,6 @@ import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.List;
 
 public class ioSampleTest {
 
@@ -56,12 +53,11 @@ public class ioSampleTest {
         }
 
         wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.xpath("//android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.RelativeLayout")));
+                (By.xpath(secondNewJob)));
     }
 
     @AfterMethod
     public void teardown(){
         driver.quit();
     }
-
 }
